@@ -88,3 +88,30 @@ cursor: pointer;
     height: 100%;
     object-fit: cover;
 }
+
+@media (max-width:991px)
+{
+    .main
+    {
+        width: 100%;
+        left: 0;
+    }
+
+    .main.active{
+        left:300px;
+    }
+}
+
+
+@media (max-width: 480px)
+{
+   .toggle{
+    z-index: 1001;
+   }
+
+   .main.active .toggle
+   {
+    background: var(--blue);
+    color: var(--white);
+   }
+}

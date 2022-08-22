@@ -129,3 +129,34 @@ white-space: normal;
     box-shadow: 35px -35px 0 10px var(--white);
     pointer-events: none;
 }
+
+@media (max-width:991px)
+{
+    .navigator
+    {
+        left:-300px;
+    }
+    
+    .navigator.active
+    {
+        width: 300px;
+        left:0;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .navigator
+    {
+        width: 100%;
+        left:-100%;
+        z-index: 1000;
+    }
+    
+    .navigator.active
+    {
+        width: 100%;
+        left:0;
+    }
+
+}
